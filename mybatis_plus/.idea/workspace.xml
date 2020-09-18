@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57b7a49c-93d0-4b19-b5fa-2334f109d41a" name="Default Changelist" comment="" />
+    <list default="true" id="57b7a49c-93d0-4b19-b5fa-2334f109d41a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cc/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cc/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cc/MybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cc/MybatisPlusApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cc/MybatisPlusApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cc/MybatisPlusApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +37,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MybatisPlusApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.MybatisPlusApplicationTests.testInsert">
     <configuration name="MybatisPlusApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis_plus" />
       <extension name="coverage">
@@ -49,6 +54,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MybatisPlusApplicationTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_plus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cc" />
+      <option name="MAIN_CLASS_NAME" value="com.cc.MybatisPlusApplicationTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MybatisPlusApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mybatis_plus" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cc.MybatisPlusApplication" />
@@ -58,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisPlusApplicationTests.testInsert" />
         <item itemvalue="JUnit.MybatisPlusApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
@@ -72,11 +94,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600419883477</updated>
-      <workItem from="1600419887841" duration="1575000" />
+      <workItem from="1600419887841" duration="2163000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1510" height="223" key="GridCell.Tab.0.bottom" timestamp="1600422179061">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1510" height="223" key="GridCell.Tab.0.bottom/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1600422179061" />
+    <state width="1510" height="223" key="GridCell.Tab.0.center" timestamp="1600422179060">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1510" height="223" key="GridCell.Tab.0.center/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1600422179060" />
+    <state width="1510" height="223" key="GridCell.Tab.0.left" timestamp="1600422179060">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1510" height="223" key="GridCell.Tab.0.left/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1600422179060" />
+    <state width="1510" height="223" key="GridCell.Tab.0.right" timestamp="1600422179060">
+      <screen x="0" y="23" width="1680" height="954" />
+    </state>
+    <state width="1510" height="223" key="GridCell.Tab.0.right/-1208.-1417.3440.1417/0.23.1680.954@0.23.1680.954" timestamp="1600422179060" />
   </component>
 </project>
