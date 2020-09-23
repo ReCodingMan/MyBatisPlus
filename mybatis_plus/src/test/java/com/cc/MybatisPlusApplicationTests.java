@@ -116,4 +116,24 @@ class MybatisPlusApplicationTests {
         System.out.println(page.getTotal());
     }
 
+    //测试删除
+    @Test
+    public void testDeleteById() {
+        userMapper.deleteById(1L);
+    }
+
+    //测试删除-批量
+    @Test
+    public void testDeleteBatchIds() {
+        userMapper.deleteBatchIds(Arrays.asList(2,3));
+    }
+
+    //测试删除-条件
+    @Test
+    public void testDeleteByMap() {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name", "狂神说java");
+        userMapper.deleteByMap(map);
+    }
+
 }
