@@ -26,4 +26,7 @@ public class User {
 
     @Version
     private int version;
+
+    @TableLogic //逻辑删除
+    private int deleted;
 }

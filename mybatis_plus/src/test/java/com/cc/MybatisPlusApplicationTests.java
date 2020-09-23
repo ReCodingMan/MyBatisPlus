@@ -119,7 +119,7 @@ class MybatisPlusApplicationTests {
     //测试删除
     @Test
     public void testDeleteById() {
-        userMapper.deleteById(1L);
+        userMapper.deleteById(5L);
     }
 
     //测试删除-批量
@@ -135,5 +135,7 @@ class MybatisPlusApplicationTests {
         map.put("name", "狂神说java");
         userMapper.deleteByMap(map);
     }
+
+
 
 }
