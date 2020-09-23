@@ -50,6 +50,35 @@ class MybatisPlusApplicationTests {
         System.out.println(i);
     }
 
+    //测试乐观锁。成功
+    @Test
+    public void testOptimisticLocker() {
+        //1、查询用户信息
+        User user = userMapper.selectById(1L);
+        //2、修改用户信息
+        user.setName("optimistic");
+        user.setAge(999);
+        //3、执行更新操作
+        userMapper.updateById(user);
+    }
 
+    //测试乐观锁。失败
+    @Test
+    public void testOptimisticLockerFail() {
+        //1、线程一
+        User user = userMapper.selectById(1L);
+        user.setName("optimistic");
+        user.setAge(999);
+
+        //模拟一个线程插入操作
+        User user2 = userMapper.selectById(1L);
+        user2.setName("optimisticFail");
+        user2.setAge(888);
+
+        userMapper.updateById(user2);
+
+        //没有更新，可以使用自旋锁来提交
+        userMapper.updateById(user);
+    }
 
 }
