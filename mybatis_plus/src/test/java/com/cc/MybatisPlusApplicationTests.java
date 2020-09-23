@@ -37,4 +37,19 @@ class MybatisPlusApplicationTests {
         System.out.println(insert);
     }
 
+    // 更新操作
+    @Test
+    public void testUpdate() {
+        User user = new User();
+        user.setName("狂神说java");
+        user.setAge(100);
+        user.setEmail("1111@22222");
+        user.setId(3L);
+
+        int i = userMapper.updateById(user);
+        System.out.println(i);
+    }
+
+
+
 }
