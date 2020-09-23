@@ -1,5 +1,6 @@
 package com.cc;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cc.mapper.UserMapper;
 import com.cc.pojo.User;
 import org.junit.jupiter.api.Test;
@@ -104,6 +105,15 @@ class MybatisPlusApplicationTests {
         map.put("name","狂神说java");
         List<User> users = userMapper.selectByMap(map);
         users.forEach(System.out::println);
+    }
+
+    //测试分页查询
+    @Test
+    public void testPage() {
+        Page<User> page = new Page<>(2,5);
+        userMapper.selectPage(page, null);
+        page.getRecords().forEach(System.out::println);
+        System.out.println(page.getTotal());
     }
 
 }
